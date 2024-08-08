@@ -1,6 +1,6 @@
 package org.yael.poo.interfaces.imprenta.modelo;
 
-abstract public class Hoja {
+abstract public class Hoja implements Imprimible {
     protected String contenido;
 
 
