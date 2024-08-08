@@ -10,7 +10,7 @@ public class Curriculum extends Hoja{
     private String carrera;
     private List<String> experiencias;
 
-    public Curriculum(String content, String persona, String carrera){
+    public Curriculum(String persona, String carrera, String content){
         super(content);
         this.persona = persona;
         this.carrera = carrera;
@@ -29,7 +29,7 @@ public class Curriculum extends Hoja{
         sb.append(this.persona).append("\n")
                 .append("Resumen: ").append(this.contenido)
                 .append("\n").append("Profesion: ")
-                .append(this.carrera).append("/n")
+                .append(this.carrera).append("\n")
                 .append("Experiencias: \n");
 
         for( String exp: this.experiencias ){
